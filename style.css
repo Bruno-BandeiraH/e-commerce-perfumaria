@@ -53,6 +53,10 @@ body {
     margin: 8px 0;
 }
 
+.item-descricao {
+    margin-bottom: 8px;
+}
+
 .preco-compra {
     display: flex;
     margin: 8px;
@@ -155,6 +159,7 @@ body {
 
     .botao-compra {
         padding: 16px;
+        font-size: 22px;
     }
 
     /* Sobre */
