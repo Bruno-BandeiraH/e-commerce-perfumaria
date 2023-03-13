@@ -29,6 +29,11 @@ body {
     color: #000000;
 }
 
+.nav-link:hover {
+    color: #D2DB24;
+    text-decoration: underline;
+}
+
 
 /* Produtos*/
 .conteudo-principal {
@@ -46,6 +51,11 @@ body {
     border: 1px solid #D2DB24;
     border-radius: 8px;
     padding: 8px;
+}
+
+.produtos:hover {
+    border-color: #3C97D2;
+    transform: scale(1.05);
 }
 
 .nome-item {
@@ -76,6 +86,10 @@ body {
     font-size: 26px;
     border-radius: 10px;
     color: #000000;
+}
+
+.botao-compra:active {
+    background: #D2DB24;
 }
 
 
@@ -112,24 +126,34 @@ body {
     
 }
 
-.rodape-container li {
+.menu-rodape li {
     display: inline;
     padding: 0 16px;
 }
 
-.rodape-container li a {
+.rodape-menu {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    
+}
+
+.contatos li {
+    display: inline;
+    padding: 0 8px;
+}
+
+.contatos {
+    margin: 8px 0 16px 0;
+}
+
+.contatos-imagem {
+    height: 24px;
+    width: 24px;
 }
 
 @media screen and (min-width: 768px) {
     
     /* Cabeçalho*/
-    .cabecalho-container {
-        
-    }
 
     .nav-link {
         font-size: 22px;
@@ -172,13 +196,19 @@ body {
     .rodape-container h1 {
         padding-bottom: 16px;
     }
-    .rodape-container li {
-        padding: 0 64px;
+    .menu-rodape li {
+        padding: 0 32px;
         font-size: 22px;
+    }
+
+    .contatos-imagem {
+        height: 32px;
+        width: 32px;
     }
 
     @media screen and (min-width: 1128px) {
         
+        /* Cabeçalho*/
         .cabecalho-container {
             display: flex;
             flex-direction: row;
@@ -193,7 +223,6 @@ body {
         .nav-link {
             padding: 0 16px;
         }
-
     }
 
 }
